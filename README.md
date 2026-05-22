@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/27974492/README.md)
 # SOC/SIEM Detection Lab: Wazuh, Sysmon, Windows Event Logs, and Microsoft Defender
 
 ## Overview
@@ -11,6 +10,23 @@ The goal of this project was to develop and demonstrate practical skills relevan
 
 ---
 
+## Evidence Snapshot
+
+The screenshots below provide a quick visual overview of the lab environment and detection workflow. The full incident reports include the complete evidence, investigation notes, remediation steps, and lessons learned for each scenario.
+
+### Wazuh Agent Monitoring
+
+The Windows 11 endpoint was successfully onboarded into Wazuh and monitored through the Wazuh Agent.
+
+![Wazuh Agent Active - WIN11-ENDPOINT](screenshots/42-Wazuh-Agent-Active-WIN11-ENDPOINT.png)
+
+### Microsoft Defender Detection in Wazuh
+
+Wazuh successfully ingested Microsoft Defender telemetry from the Windows endpoint during the EICAR antivirus test-file scenario.
+
+![Wazuh Defender EICAR Event Overview](screenshots/79-Wazuh-Defender-EICAR-Event-Overview.png)
+
+---
 ## Lab Architecture
 
 ```text
